@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		835764F62D39743C00DA8A26 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 835764F52D39743C00DA8A26 /* FirebaseFirestore */; };
+		835764F82D39743C00DA8A26 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 835764F72D39743C00DA8A26 /* FirebaseStorage */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		8341B4742D3897F10002857D /* audio_recorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = audio_recorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +28,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				835764F62D39743C00DA8A26 /* FirebaseFirestore in Frameworks */,
+				835764F82D39743C00DA8A26 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,8 @@
 			);
 			name = audio_recorder;
 			packageProductDependencies = (
+				835764F52D39743C00DA8A26 /* FirebaseFirestore */,
+				835764F72D39743C00DA8A26 /* FirebaseStorage */,
 			);
 			productName = audio_recorder;
 			productReference = 8341B4742D3897F10002857D /* audio_recorder.app */;
@@ -94,6 +103,9 @@
 			);
 			mainGroup = 8341B46B2D3897F10002857D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				835764F42D39743C00DA8A26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8341B4752D3897F10002857D /* Products */;
 			projectDirPath = "";
@@ -248,7 +260,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"audio_recorder/Preview Content\"";
-				DEVELOPMENT_TEAM = N483BKD2H9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -287,7 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"audio_recorder/Preview Content\"";
-				DEVELOPMENT_TEAM = N483BKD2H9;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -339,6 +351,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		835764F42D39743C00DA8A26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.7.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		835764F52D39743C00DA8A26 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 835764F42D39743C00DA8A26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		835764F72D39743C00DA8A26 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 835764F42D39743C00DA8A26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8341B46C2D3897F10002857D /* Project object */;
 }
