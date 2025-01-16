@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		835764F62D39743C00DA8A26 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 835764F52D39743C00DA8A26 /* FirebaseFirestore */; };
 		835764F82D39743C00DA8A26 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 835764F72D39743C00DA8A26 /* FirebaseStorage */; };
+		837140B82D39BD8E002E7121 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 837140B72D39BD8E002E7121 /* FirebaseCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				835764F62D39743C00DA8A26 /* FirebaseFirestore in Frameworks */,
+				837140B82D39BD8E002E7121 /* FirebaseCore in Frameworks */,
 				835764F82D39743C00DA8A26 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +76,7 @@
 			packageProductDependencies = (
 				835764F52D39743C00DA8A26 /* FirebaseFirestore */,
 				835764F72D39743C00DA8A26 /* FirebaseStorage */,
+				837140B72D39BD8E002E7121 /* FirebaseCore */,
 			);
 			productName = audio_recorder;
 			productReference = 8341B4742D3897F10002857D /* audio_recorder.app */;
@@ -260,10 +263,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"audio_recorder/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = N483BKD2H9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -299,10 +303,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"audio_recorder/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = N483BKD2H9;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -373,6 +378,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 835764F42D39743C00DA8A26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		837140B72D39BD8E002E7121 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 835764F42D39743C00DA8A26 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

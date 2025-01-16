@@ -4,6 +4,7 @@
 //
 //  Created by Anastasiya Masalava on 1/15/25.
 //
+
 import SwiftUI
 
 struct WelcomeView: View {
@@ -21,7 +22,7 @@ struct WelcomeView: View {
                     .foregroundColor(.secondary)
                     .multilineTextAlignment(.center)
                 
-                NavigationLink(destination: Text("Recording screen coming soon...")) {
+                NavigationLink(destination: AudioRecorderView()) {
                     HStack {
                         Image(systemName: "mic.circle.fill")
                             .font(.system(size: 25))
