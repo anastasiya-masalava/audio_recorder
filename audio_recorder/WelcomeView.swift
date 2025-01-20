@@ -35,8 +35,8 @@ struct WelcomeView: View {
                     .background(LinearGradient(gradient: Gradient(colors: [Color.purple, Color.blue]),
                                                startPoint: .leading,
                                                endPoint: .trailing))
-                    .cornerRadius(15)
-                    .padding(.horizontal, 40)
+                    .cornerRadius(5)
+                    .padding(.horizontal, -10)
                     .shadow(color: Color.blue.opacity(0.4), radius: 10, x: 0, y: 5)
                 }
             }
